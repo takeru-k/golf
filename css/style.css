@@ -340,7 +340,7 @@ table {
   text-transform: uppercase;
   color: #fff;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.1;
 }
 .l-pageHeader__heading h2 {
@@ -353,7 +353,7 @@ table {
   }
 }
 .l-spacer {
-  padding: 16px 0 16px;
+  padding: 16px 0 32px;
 }
 
 @media (min-width: 768px) {
@@ -557,8 +557,8 @@ table {
 .c-section__heading span {
   color: #013586;
   text-transform: uppercase;
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 .c-section__heading h2 {
   line-height: 1.2;
@@ -665,7 +665,7 @@ table {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
   background: -webkit-linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
@@ -673,6 +673,8 @@ table {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientEffect 3s infinite alternate;
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 @keyframes gradientEffect {
   from {
@@ -684,12 +686,12 @@ table {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (min-width: 1024px) {
   .c-topHeading span {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1.1;
     position: absolute;
   }
@@ -700,7 +702,7 @@ h2 {
   }
 }
 .c-topTexts {
-  margin-top: 16px;
+  padding-top: 8px;
 }
 .c-topTexts ul {
   background: #f7f7f7;
@@ -708,6 +710,11 @@ h2 {
   padding: 16px;
 }
 
+@media (min-width: 768px) {
+  .c-topTexts {
+    padding-top: 16px;
+  }
+}
 .p-mainVisual {
   position: relative;
 }
@@ -879,7 +886,7 @@ h2 {
 }
 .p-topCourse {
   background: url("../images/sample.jpg");
-  padding: 36px 0;
+  padding: 56px 0;
 }
 
 .p-topCourse__box {
@@ -972,7 +979,7 @@ h2 {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
   background: -webkit-linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
@@ -991,7 +998,7 @@ h2 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .p-simulator__list {

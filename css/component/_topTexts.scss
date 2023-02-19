@@ -1,10 +1,16 @@
 
 .c-topTexts{
-  margin-top: 16px;
-
+  padding-top: 8px;
+  
   ul{
     background: #f7f7f7;
     margin-top: 16px;
     padding: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .c-topTexts{
+    padding-top: 16px;
   }
 }
