@@ -1,0 +1,32 @@
+@use "../setting/setting";
+
+.c-button{
+  a{
+    color: setting.$color-main;
+    border: 1px solid setting.$color-main;
+    text-align: center;
+    background: #fff;
+    padding: 12px 16px;
+    letter-spacing: 1.6px;
+    margin: 24px auto 0;
+    font-weight: bold;
+    display: block;
+    transition: .4s;
+
+    @media (min-width: 768px){
+      width: 200px;
+      margin-left: 0;
+    }
+
+    &:hover{
+      background: setting.$color-main;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-button{
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,56 @@
+.c-banner{
+  padding-bottom: 24px;
+}
+
+@media not all and (min-width: 768px){
+  .l-banner__heading{
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px){
+  .c-banner{
+    background: #f7f7f7;
+    padding: 24px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .c-banner__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h2{
+      position: relative;      
+
+      &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 80px;
+      height: 1px;
+      background: #333;
+      }
+    }
+
+    a{
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .l-banner__heading{
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-banner{
+    h2{
+      font-size: 28px;
+    }
+  }
+}

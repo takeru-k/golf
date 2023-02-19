@@ -1,0 +1,18 @@
+@use "../setting/setting";
+
+.p-topSimulator{
+  padding: 24px 0 40px;
+}
+
+@media (min-width: 768px){
+  .p-topSimulator{
+    padding: 40px 0 64px;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .p-topSimulator{
+    padding: 88px 0 88px;
+  }
+}

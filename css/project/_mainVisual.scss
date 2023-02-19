@@ -1,0 +1,58 @@
+
+.p-mainVisual{
+  position: relative;
+
+}
+
+.p-mainVisual__slider .slick-slide {
+  height: 400px;
+  overflow: hidden;
+}
+.p-mainVisual__slider .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p-mainVisual__dots .slick-dots {
+  text-align: center;
+}
+.p-mainVisual__dots .slick-dots li {
+  display: inline-block;
+  width: 75px;
+  height: 2px;
+  margin: 2px;
+  background: #eaeaea;
+  cursor: pointer;
+}
+.p-mainVisual__dots .slick-dots button {
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  outline: none;
+  background: #0a467d;
+  cursor: pointer;
+}
+.p-mainVisual__dots .slick-dots .slick-active button {
+  background: #0a467d;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+  display: none;
+}
+
+.slick-dots{
+  bottom: -20px;
+}
+
+@media (min-width: 1024px){
+  .p-mainVisual__slider .slick-slide{
+    height: 80vh;
+  }
+}

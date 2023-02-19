@@ -1,0 +1,69 @@
+@use "../setting/setting";
+
+.p-simulator__heading{
+  span{
+    color: setting.$color-main;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
+    background: -webkit-linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientEffect 3s infinite alternate;
+  }
+ 
+@keyframes gradientEffect {
+  from {background-position: left}
+  to {background-position: right}
+}
+
+  }
+
+  h2{
+    font-size: 18px;
+
+  }
+
+
+.p-simulator__list{
+  padding-top: 20px;
+}
+
+.p-simulator__box{
+  background: setting.$color-sub;
+  padding: 16px;
+  margin-bottom: 20px;
+
+  h3{
+    font-size: 18px;
+  }
+
+  p{
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 768px){
+  .p-simulator__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-simulator__box{
+    width: 32%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-simulator__heading{
+    h2{
+      font-size: 24px;
+    }
+  }
+}

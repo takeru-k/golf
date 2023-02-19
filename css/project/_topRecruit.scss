@@ -1,0 +1,15 @@
+.p-topRecruit{
+  padding: 24px 0 60px;
+}
+
+@media (min-width: 768px){
+  .p-topRecruit{
+    padding: 64px 0 72px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-topRecruit{
+    padding: 88px 0;
+  }
+}
