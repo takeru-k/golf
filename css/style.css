@@ -102,7 +102,7 @@ select::-ms-expand {
 	全体共通
 =================================*/
 body {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans CJK JP Subset", "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
   font-weight: 500;
   color: #333;
   line-height: 1.75;
@@ -211,7 +211,7 @@ table {
 }
 @media (min-width: 768px) {
   .l-header__contact {
-    background: #E9F0FB;
+    background: #dfedf7;
     color: #fff;
     text-align: center;
     padding: 12px 24px 12px 48px;
@@ -363,7 +363,7 @@ table {
 }
 @media (min-width: 1024px) {
   .l-spacer {
-    padding: 40px 0;
+    padding: 48px 0 16px;
   }
 }
 /* ハンバーガーメニュー */
@@ -554,6 +554,9 @@ table {
   padding-top: 0;
 }
 
+.c-section__heading {
+  text-align: center;
+}
 .c-section__heading span {
   color: #013586;
   text-transform: uppercase;
@@ -566,8 +569,12 @@ table {
 }
 
 @media (min-width: 1024px) {
+  .c-section {
+    padding: 64px 0 80px;
+  }
   .c-section__heading span {
     font-size: 16px;
+    font-weight: bold;
   }
   .c-section__heading h2 {
     font-size: 24px;
@@ -600,24 +607,29 @@ table {
   .c-table th {
     display: block;
     padding: 8px 12px;
-    background: #E9F0FB;
+    background: #dfedf7;
     text-align: left;
+    border: 1px solid #eaeaea;
   }
   .c-table td {
     display: block;
     padding: 8px 0 20px 12px;
+    border: 1px solid #eaeaea;
   }
 }
 @media (min-width: 768px) {
+  .c-table {
+    padding-top: 40px;
+  }
   .c-table th {
     padding: 24px;
-    background: #E9F0FB;
-    border: 1px solid #ddd;
+    background: #dfedf7;
+    border: 1px solid #cccccc;
     width: 180px;
   }
   .c-table td {
     padding: 24px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #cccccc;
   }
 }
 .c-table__note {
@@ -1006,7 +1018,7 @@ h2 {
 }
 
 .p-simulator__box {
-  background: #E9F0FB;
+  background: #dfedf7;
   padding: 16px;
   margin-bottom: 20px;
 }
@@ -1021,6 +1033,7 @@ h2 {
   .p-simulator__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
   }
   .p-simulator__box {
     width: 32%;
