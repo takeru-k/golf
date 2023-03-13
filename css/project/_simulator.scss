@@ -26,7 +26,7 @@
 
   h2{
     font-size: 20px;
-
+    position: relative;
   }
 
 
@@ -36,7 +36,7 @@
 
 .p-simulator__box{
   background: setting.$color-sub;
-  padding: 16px;
+  padding: 24px;
   margin-bottom: 20px;
 
   h3{

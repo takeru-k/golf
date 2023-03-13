@@ -19,12 +19,11 @@
 .p-topInfo__heading{
   color: #fff;
   text-align: center;
-  
+  line-height: 1.4;
 
   span{
-    text-transform: uppercase;
-    font-size: 24px;
-    
+    text-transform: capitalize;
+    font-size: 28px;
     display: block;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -46,15 +45,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     padding: 16px 24px;
     font-weight: bold;
     width: 200px;
     text-align: center;
     border-radius: 2px;
     overflow: hidden;
-    border-left: 4px solid setting.$color-main;
-    border-right: 4px solid setting.$color-main;
+    color: #fff;
 
     &:hover{
       opacity: 0.8;
@@ -64,16 +66,17 @@
 }
 
 .-boxAbout{
-  background: url("../images/sample.jpg");
+  background: url("../images/top-menu1.jpg")no-repeat center center/cover;
 }
 
 .-boxAccess{
-  background: url("../images/sample2.jpg");
+  background: url("../images/sample2.jpg")no-repeat center center/cover;
 }
 
 .-boxMember{
-  background: url("../images/sample.jpg");
+  background: url("../images/top-menu3.jpg")no-repeat center center/cover;
 }
+
 
 
 @media (min-width: 768px){
@@ -112,3 +115,4 @@
   }
 
 }
+

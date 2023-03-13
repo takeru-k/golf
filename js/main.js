@@ -8,6 +8,8 @@ $(function () {
   var $slider5 = $('#js-slider');
  
   $slider5.slick({
+    fade: true,
+    speed: 1500,
     arrows: false, // 前・次のボタンを表示しない
     dots: true, // ドットナビゲーションを表示する
     appendDots: $('.p-mainVisual__dots'), // ドットナビゲーションの生成位置を変更
