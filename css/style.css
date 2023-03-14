@@ -204,7 +204,7 @@ table {
     top: 60px;
   }
   .l-header__contact {
-    margin: 32px 16px;
+    margin: 20px 16px;
     padding: 16px;
     display: block;
   }
@@ -343,6 +343,7 @@ table {
   font-family: Roboto, sans-serif;
   line-height: 1.1;
   letter-spacing: 1px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 .l-pageHeader__heading h2 {
   color: #fff;
@@ -350,7 +351,13 @@ table {
 
 @media (min-width: 1024px) {
   .l-pageHeader {
-    padding: 48px 0;
+    padding: 64px 0;
+  }
+  .l-pageHeader__heading span {
+    font-size: 32px;
+  }
+  .l-pageHeader__heading h2 {
+    font-size: 24px;
   }
 }
 .l-spacer {
@@ -501,6 +508,9 @@ table {
     display: block;
     margin: 0 auto;
   }
+  .c-banner__content a img {
+    image-rendering: pixelated;
+  }
   .l-banner__heading {
     margin-left: auto;
   }
@@ -563,7 +573,7 @@ table {
   font-family: Roboto, sans-serif;
 }
 .c-section__heading h2 {
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 24px;
 }
 
@@ -606,9 +616,6 @@ table {
 .c-table table {
   width: 100%;
   max-width: 800px;
-}
-.c-table th {
-  font-weight: normal;
 }
 .c-table span {
   font-size: 14px;
@@ -679,6 +686,9 @@ table {
   height: 8px;
   border-radius: 50%;
   background: #013586;
+}
+.c-box__content a {
+  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
@@ -771,6 +781,9 @@ h2 {
 .c-cta__btn {
   text-align: center;
 }
+.c-cta__btn span {
+  padding-left: 16px;
+}
 
 .btn,
 a.btn,
@@ -792,26 +805,24 @@ button.btn {
   border-radius: 0.5rem;
   margin: 0 auto;
 }
-.btn:before,
-a.btn:before,
-button.btn:before {
+
+a.btn--line {
+  color: #fff;
+  background-color: #00b900;
+  border-bottom: 5px solid #048904;
+}
+a.btn--line:before {
   position: absolute;
   content: "";
   width: 32px;
   height: 32px;
   background: url(../images/icon/icon-line.svg) no-repeat center center/cover;
-  left: 8%;
+  left: 12%;
   top: 50%;
   transform: translateY(-50%);
 }
 
-a.btn--orange {
-  color: #fff;
-  background-color: #00b900;
-  border-bottom: 5px solid #048904;
-}
-
-a.btn--orange:hover {
+a.btn--line:hover {
   margin-top: 3px;
   color: #fff;
   background: #28B472;

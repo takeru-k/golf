@@ -25,6 +25,10 @@ h2{
 
 .c-cta__btn{
   text-align: center;
+
+  span{
+    padding-left: 16px;
+  }
 }
 
 .btn,
@@ -48,28 +52,28 @@ button.btn {
   letter-spacing: 0.1em;
   border-radius: 0.5rem;
   margin: 0 auto;
-
-
-  &:before{
-    position: absolute;
-        content: "";
-        width: 32px;
-        height: 32px;
-        background: url(../images/icon/icon-line.svg) no-repeat center
-          center/cover;
-        left: 8%;
-        top: 50%;
-        transform: translateY(-50%);
-  }
 }
 
 
-a.btn--orange {
+a.btn--line {
   color: #fff;
   background-color: #00b900;
   border-bottom: 5px solid #048904;
+
+  &:before{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon/icon-line.svg) no-repeat center
+      center/cover;
+    left: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-a.btn--orange:hover {
+
+a.btn--line:hover {
   margin-top: 3px;
   color: #fff;
   background: #28B472;

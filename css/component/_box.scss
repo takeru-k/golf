@@ -27,6 +27,10 @@
       background: setting.$color-main;;
     }
   }
+
+  a{
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 1024px){
