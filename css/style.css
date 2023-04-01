@@ -1059,37 +1059,53 @@ a.btn--shadow {
 .p-topInfo__box {
   height: 240px;
   position: relative;
+  transition: 1s;
+}
+.p-topInfo__box:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+}
+.p-topInfo__box:hover:after {
+  opacity: 0;
 }
 .p-topInfo__box a {
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.p-topInfo__box a span {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 16px 24px;
   font-weight: bold;
-  width: 200px;
-  text-align: center;
-  border-radius: 2px;
-  overflow: hidden;
-  color: #fff;
-}
-.p-topInfo__box a:hover {
-  opacity: 0.8;
+  font-size: 18px;
+  text-shadow: 3px 3px 5px rgba(14, 51, 29, 0.5);
 }
 
 .-boxAbout {
-  background: url("../images/top-menu1.jpg") no-repeat center center/cover;
+  background: url("../images/top-menu3.jpg") no-repeat center center/cover;
 }
 
 .-boxAccess {
-  background: url("../images/page-header.jpg") no-repeat center center/cover;
+  background: url("../images/top-menu2.jpg") no-repeat center center/cover;
 }
 
 .-boxMember {
-  background: url("../images/top-menu3.jpg") no-repeat center center/cover;
+  background: url("../images/guide5.jpg") no-repeat center center/cover;
 }
 
 @media (min-width: 768px) {
@@ -1100,8 +1116,6 @@ a.btn--shadow {
     width: 33%;
   }
   .p-topInfo__box a {
-    padding: 8px;
-    width: 180px;
     transition: 0.2s;
   }
 }
