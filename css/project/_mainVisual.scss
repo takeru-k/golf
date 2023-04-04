@@ -199,7 +199,7 @@
   .p-mainVisual__copy{
 
     h2{
-      margin-bottom: 0;
+      margin-bottom: 16px;
 
       @media (min-width: 768px){
         margin-bottom: 32px;
@@ -209,7 +209,17 @@
     h2:after{
       position: relative;
     }
+
+
   }
 
 
+}
+
+.pagetop {
+position: fixed;
+bottom: 20px;
+right: 0;
+z-index: 100;
+width: 240px;
 }

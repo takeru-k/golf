@@ -132,7 +132,7 @@ table {
 }
 
 .l-header__logo {
-  width: 160px;
+  width: 220px;
   font-size: 1.5rem;
   position: absolute;
   top: 50%;
@@ -223,7 +223,7 @@ table {
     height: 80px;
   }
   .l-header__logo {
-    width: 240px;
+    width: 300px;
   }
   .l-header__nav {
     display: flex;
@@ -1010,7 +1010,7 @@ a.btn--shadow {
   margin-top: 0;
 }
 .p-mainVisual2 .p-mainVisual__copy h2 {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .p-mainVisual2 .p-mainVisual__copy h2 {
@@ -1019,6 +1019,14 @@ a.btn--shadow {
 }
 .p-mainVisual2 .p-mainVisual__copy h2:after {
   position: relative;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 100;
+  width: 240px;
 }
 
 .p-topSimulator {
