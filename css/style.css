@@ -1028,6 +1028,11 @@ a.btn--shadow {
   z-index: 100;
   width: 240px;
 }
+@media (min-width: 768px) {
+  .pagetop {
+    width: 320px;
+  }
+}
 
 .p-topSimulator {
   padding: 48px 0 40px;
